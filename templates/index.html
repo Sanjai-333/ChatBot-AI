@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartChat AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+
+                <div>
+                    <h2>SmartChat</h2>
+                    <p>AI Assistant</p>
+                </div>
+            </div>
+
+            <button class="new-chat" onclick="clearChat()">
+                <span>＋</span>
+                New Chat
+            </button>
+
+            <div class="sidebar-section">
+
+                <div class="section-title">
+                    QUICK TOPICS
+                </div>
+
+                <button class="topic"
+                        onclick="usePrompt('What is Artificial Intelligence?')">
+                    🤖 Artificial Intelligence
+                </button>
+
+                <button class="topic"
+                        onclick="usePrompt('What is Machine Learning?')">
+                    🧠 Machine Learning
+                </button>
+
+                <button class="topic"
+                        onclick="usePrompt('What is Python?')">
+                    🐍 Python
+                </button>
+
+                <button class="topic"
+                        onclick="usePrompt('What is Data Science?')">
+                    📊 Data Science
+                </button>
+
+                <button class="topic"
+                        onclick="usePrompt('Give me study tips')">
+                    📚 Study Tips
+                </button>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <div class="system-status">
+                    <span></span>
+                    AI System Online
+                </div>
+
+                <p>SmartChat AI v1.0</p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CHAT -->
+        <main class="chat-area">
+
+            <!-- HEADER -->
+            <header class="header">
+
+                <div class="assistant">
+
+                    <div class="assistant-avatar">
+                        ✦
+                    </div>
+
+                    <div>
+                        <h1>SmartChat AI</h1>
+
+                        <p>
+                            <span class="online"></span>
+                            Online · Ready to help
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="clear-button"
+                        onclick="clearChat()">
+                    Clear Chat
+                </button>
+
+            </header>
+
+
+            <!-- CHAT BOX -->
+            <section id="chat-box" class="chat-box">
+
+                <div class="welcome">
+
+                    <div class="welcome-icon">
+                        ✦
+                    </div>
+
+                    <h2>
+                        How can I help you today?
+                    </h2>
+
+                    <p>
+                        Ask me about AI, programming,
+                        machine learning, data science and more.
+                    </p>
+
+                    <div class="suggestions">
+
+                        <button onclick="usePrompt('What is AI?')">
+                            <strong>What is AI?</strong>
+                            <small>Learn the basics of AI</small>
+                        </button>
+
+                        <button onclick="usePrompt('Explain machine learning')">
+                            <strong>Machine Learning</strong>
+                            <small>Understand ML simply</small>
+                        </button>
+
+                        <button onclick="usePrompt('What is Python?')">
+                            <strong>Python</strong>
+                            <small>Learn Python programming</small>
+                        </button>
+
+                        <button onclick="usePrompt('What is Data Science?')">
+                            <strong>Data Science</strong>
+                            <small>Explore data and analytics</small>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- INPUT -->
+            <div class="input-section">
+
+                <div class="input-box">
+
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Message SmartChat AI..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="send-button"
+                        onclick="sendMessage()">
+                        ➤
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    SmartChat AI can make mistakes. Check important information.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

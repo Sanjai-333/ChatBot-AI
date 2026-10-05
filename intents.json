@@ -1,0 +1,622 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "hey there",
+        "hello there",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "hi chatbot",
+        "hello chatbot",
+        "hey bot",
+        "hi smartchat",
+        "hello smartchat",
+        "howdy",
+        "nice to meet you",
+        "can we chat",
+        "are you there",
+        "start chat",
+        "let's talk",
+        "can you talk to me"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi! I'm SmartChat AI. What would you like to know?",
+        "Hey! Nice to see you. How can I help?",
+        "Hello! Feel free to ask me something."
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "talk to you later",
+        "catch you later",
+        "I have to go",
+        "I am leaving",
+        "gotta go",
+        "exit",
+        "quit",
+        "close chat",
+        "bye chatbot",
+        "goodbye bot",
+        "see you again",
+        "have a nice day",
+        "take care",
+        "that's all",
+        "I am done",
+        "end chat"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Keep learning!",
+        "Bye! It was nice chatting with you.",
+        "Take care! Come back anytime."
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "thank you so much",
+        "thanks chatbot",
+        "thanks smartchat",
+        "I appreciate it",
+        "I appreciate your help",
+        "that helped",
+        "you helped me",
+        "helpful answer",
+        "great help",
+        "many thanks",
+        "thank you for explaining",
+        "thanks for the explanation",
+        "thanks for your help",
+        "I am grateful",
+        "that was helpful",
+        "you are helpful",
+        "nice answer"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad I could help!",
+        "You're very welcome!",
+        "Happy to help!"
+      ]
+    },
+
+    {
+      "tag": "bot_name",
+      "patterns": [
+        "what is your name",
+        "what's your name",
+        "who are you",
+        "tell me your name",
+        "what should I call you",
+        "what can I call you",
+        "do you have a name",
+        "are you a chatbot",
+        "are you a bot",
+        "who am I talking to",
+        "introduce yourself",
+        "tell me about yourself",
+        "what are you called",
+        "your name please",
+        "who is this",
+        "are you SmartChat",
+        "what is SmartChat",
+        "what is your chatbot name"
+      ],
+      "responses": [
+        "I'm SmartChat AI, a machine-learning based chatbot.",
+        "My name is SmartChat AI. I'm here to answer questions and chat with you.",
+        "I'm SmartChat AI, your intelligent chatbot."
+      ]
+    },
+
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "what can you do",
+        "what are your capabilities",
+        "what can you help me with",
+        "how can you help me",
+        "what do you know",
+        "what can I ask you",
+        "what questions can I ask",
+        "what are your features",
+        "tell me your features",
+        "what features do you have",
+        "what is your purpose",
+        "what are you able to do",
+        "how do you help users",
+        "can you answer questions",
+        "can you help me study",
+        "can you explain concepts",
+        "can you chat with me",
+        "what services do you provide",
+        "what can SmartChat do"
+      ],
+      "responses": [
+        "I can answer questions about AI, machine learning, Python, programming, data science, study topics, and more.",
+        "I can classify questions, understand basic context, detect sentiment, extract entities, and provide responses.",
+        "I can help you learn concepts, answer basic questions, and have simple conversations."
+      ]
+    },
+
+    {
+      "tag": "ai",
+      "patterns": [
+        "what is AI",
+        "what is artificial intelligence",
+        "explain AI",
+        "explain artificial intelligence",
+        "tell me about AI",
+        "tell me about artificial intelligence",
+        "what does AI mean",
+        "what is the meaning of AI",
+        "how does AI work",
+        "where is AI used",
+        "applications of AI",
+        "uses of AI",
+        "uses of artificial intelligence",
+        "why is AI important",
+        "what can AI do",
+        "examples of AI",
+        "AI applications",
+        "AI technology",
+        "define AI",
+        "define artificial intelligence",
+        "give me an introduction to AI",
+        "explain the concept of AI",
+        "how is AI used",
+        "what are the uses of artificial intelligence",
+        "what are examples of artificial intelligence"
+      ],
+      "responses": [
+        "Artificial Intelligence is the ability of computers to perform tasks that normally require human intelligence, such as learning, reasoning, understanding language, and decision-making.",
+        "AI allows computers and machines to learn from information, recognize patterns, understand inputs, and make decisions.",
+        "AI is used in areas such as virtual assistants, recommendation systems, robotics, healthcare, finance, education, and autonomous systems."
+      ]
+    },
+
+    {
+      "tag": "machine_learning",
+      "patterns": [
+        "what is machine learning",
+        "explain machine learning",
+        "what is ML",
+        "explain ML",
+        "tell me about machine learning",
+        "how does machine learning work",
+        "where is machine learning used",
+        "applications of machine learning",
+        "uses of machine learning",
+        "why is machine learning important",
+        "what can machine learning do",
+        "examples of machine learning",
+        "define machine learning",
+        "define ML",
+        "what does ML mean",
+        "how are machines trained",
+        "how does a machine learn",
+        "what is a machine learning model",
+        "what are ML models",
+        "what are the uses of ML",
+        "machine learning applications",
+        "machine learning technology",
+        "introduction to machine learning",
+        "explain ML simply",
+        "how is machine learning used"
+      ],
+      "responses": [
+        "Machine Learning is a branch of AI where computers learn patterns from data and use those patterns to make predictions or decisions.",
+        "Machine learning allows computers to learn from examples instead of being explicitly programmed for every task.",
+        "Machine learning is used in recommendation systems, fraud detection, image recognition, forecasting, healthcare, and many other applications."
+      ]
+    },
+
+    {
+      "tag": "python",
+      "patterns": [
+        "what is Python",
+        "explain Python",
+        "tell me about Python",
+        "why is Python popular",
+        "why is Python used",
+        "where is Python used",
+        "what can Python do",
+        "what are the uses of Python",
+        "applications of Python",
+        "Python programming",
+        "Python language",
+        "define Python",
+        "what is Python programming",
+        "is Python easy to learn",
+        "why should I learn Python",
+        "how is Python used",
+        "what can I build with Python",
+        "Python for AI",
+        "Python for machine learning",
+        "Python for data science",
+        "Python development",
+        "advantages of Python",
+        "features of Python",
+        "introduction to Python",
+        "what is Python used for"
+      ],
+      "responses": [
+        "Python is a popular high-level programming language known for its simple syntax and wide range of applications.",
+        "Python is commonly used for AI, machine learning, data science, web development, automation, scripting, and software development.",
+        "Python is beginner-friendly and has many useful libraries for programming, AI, and data science."
+      ]
+    },
+
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke",
+        "tell me something funny",
+        "make me laugh",
+        "say a joke",
+        "give me a joke",
+        "do you know any jokes",
+        "can you tell a joke",
+        "I want a joke",
+        "make me smile",
+        "tell me a funny joke",
+        "give me something funny",
+        "say something funny",
+        "funny joke please",
+        "entertain me",
+        "make me laugh please",
+        "do you have jokes",
+        "give me a funny one"
+      ],
+      "responses": [
+        "Why did the programmer quit his job? Because he didn't get arrays.",
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "I told my computer I needed a break. Now it keeps sending me vacation ads.",
+        "Why was the computer cold? It left its Windows open!"
+      ]
+    },
+
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "I need help",
+        "can you help me",
+        "please help me",
+        "I need some help",
+        "help me please",
+        "I need assistance",
+        "can you assist me",
+        "I need your help",
+        "please assist me",
+        "how can you help me",
+        "I need support",
+        "can you guide me",
+        "guide me",
+        "I don't know what to do",
+        "what should I do",
+        "help me understand",
+        "I need guidance",
+        "can you explain something",
+        "I have a question"
+      ],
+      "responses": [
+        "Of course! Tell me what you need help with.",
+        "Sure! Ask me your question and I'll try to help.",
+        "I'm here to help. What would you like to know?",
+        "Absolutely! Tell me what you're working on."
+      ]
+    },
+
+    {
+      "tag": "weather",
+      "patterns": [
+        "what is the weather",
+        "how is the weather",
+        "what's the weather like",
+        "tell me the weather",
+        "weather today",
+        "weather now",
+        "is it raining",
+        "will it rain today",
+        "is it hot today",
+        "is it cold today",
+        "weather forecast",
+        "give me weather information",
+        "tell me about today's weather",
+        "what is today's weather",
+        "how hot is it",
+        "how cold is it",
+        "will it rain",
+        "is there rain today",
+        "weather condition",
+        "current weather"
+      ],
+      "responses": [
+        "I can help with basic weather-related questions, but I don't currently have live weather data.",
+        "I can recognize weather questions, but you would need a live weather service for current conditions.",
+        "For accurate current weather, a real-time weather API would be needed."
+      ]
+    },
+
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it",
+        "what's the time",
+        "tell me the time",
+        "current time",
+        "time now",
+        "what is the current time",
+        "can you tell me the time",
+        "do you know the time",
+        "give me the current time",
+        "what time is it now",
+        "tell me current time",
+        "time please",
+        "what is time now",
+        "can you check the time",
+        "show me the time"
+      ],
+      "responses": [
+        "I can recognize time-related questions, but I don't currently have a live clock connected.",
+        "For the exact current time, a real-time clock service would be needed."
+      ]
+    },
+
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how are you today",
+        "are you okay",
+        "are you doing well",
+        "how is your day",
+        "how have you been",
+        "are you fine",
+        "are you good",
+        "how do you feel",
+        "what's up",
+        "how are things",
+        "hope you are doing well",
+        "are you alright",
+        "how is it going",
+        "how's it going",
+        "you doing okay"
+      ],
+      "responses": [
+        "I'm doing great! Thanks for asking. How can I help you?",
+        "I'm ready to help! What would you like to talk about?",
+        "I'm doing well and ready to answer your questions."
+      ]
+    },
+
+    {
+      "tag": "about_ai",
+      "patterns": [
+        "tell me more about AI",
+        "explain AI in detail",
+        "give me more information about AI",
+        "I want to learn more about AI",
+        "more about artificial intelligence",
+        "AI in detail",
+        "explain artificial intelligence in detail",
+        "give me detailed information about AI",
+        "teach me about AI",
+        "help me understand AI",
+        "explain AI simply",
+        "AI basics",
+        "AI introduction",
+        "learn AI",
+        "how can I learn AI",
+        "what should I know about AI",
+        "tell me everything about AI",
+        "explain the basics of artificial intelligence"
+      ],
+      "responses": [
+        "AI is a field of computer science focused on creating systems that can perform tasks such as learning, reasoning, recognizing patterns, understanding language, and making decisions.",
+        "AI includes areas such as machine learning, deep learning, natural language processing, computer vision, robotics, and expert systems."
+      ]
+    },
+
+    {
+      "tag": "study",
+      "patterns": [
+        "give me study tips",
+        "how should I study",
+        "how can I study better",
+        "help me study",
+        "I need study advice",
+        "study tips",
+        "how to study effectively",
+        "how can I improve my studies",
+        "how do I prepare for exams",
+        "exam preparation tips",
+        "how should I prepare for an exam",
+        "how can I concentrate while studying",
+        "how can I focus on studying",
+        "I cannot concentrate on studies",
+        "I find studying difficult",
+        "help me prepare for exams",
+        "how can I remember what I study",
+        "study methods",
+        "best way to study",
+        "how to learn faster",
+        "how to study regularly",
+        "give me advice for studying",
+        "how can I improve my learning",
+        "tips for students"
+      ],
+      "responses": [
+        "Try studying one topic at a time, practicing regularly, reviewing your mistakes, and taking short breaks.",
+        "Create a simple study schedule, focus on understanding concepts, and practice questions regularly.",
+        "Break large topics into smaller sections and study them consistently instead of trying to learn everything at once."
+      ]
+    },
+
+    {
+      "tag": "programming",
+      "patterns": [
+        "what is programming",
+        "explain programming",
+        "what is coding",
+        "explain coding",
+        "what does programming mean",
+        "what is computer programming",
+        "why is programming important",
+        "why should I learn programming",
+        "where is programming used",
+        "what can programming do",
+        "what can I build with programming",
+        "programming basics",
+        "coding basics",
+        "how does programming work",
+        "how do computers use code",
+        "what are programming languages",
+        "tell me about programming",
+        "introduction to programming",
+        "define programming",
+        "define coding",
+        "applications of programming",
+        "uses of programming",
+        "how can I learn programming",
+        "which programming language should I learn"
+      ],
+      "responses": [
+        "Programming is the process of writing instructions that tell a computer what to do.",
+        "Programming is used to create websites, mobile applications, software, games, AI systems, and automation tools.",
+        "Programming languages such as Python, C, Java, and JavaScript allow developers to create different types of software."
+      ]
+    },
+
+    {
+      "tag": "data_science",
+      "patterns": [
+        "what is data science",
+        "explain data science",
+        "tell me about data science",
+        "what does data science mean",
+        "where is data science used",
+        "applications of data science",
+        "uses of data science",
+        "why is data science important",
+        "what can data science do",
+        "examples of data science",
+        "define data science",
+        "data science basics",
+        "data science introduction",
+        "how does data science work",
+        "what is data analysis",
+        "is data science related to AI",
+        "data science and machine learning",
+        "what do data scientists do",
+        "what are the uses of data science",
+        "how is data science used",
+        "why should I learn data science",
+        "data science technology",
+        "learn data science"
+      ],
+      "responses": [
+        "Data Science is the process of collecting, analyzing, visualizing, and interpreting data to discover useful patterns and insights.",
+        "Data Science combines statistics, programming, data analysis, visualization, and machine learning to solve problems using data.",
+        "Data Science is used in business, healthcare, finance, education, marketing, recommendation systems, and many other fields."
+      ]
+    },
+
+    {
+      "tag": "college",
+      "patterns": [
+        "I am a college student",
+        "I am in college",
+        "college student",
+        "help me with college",
+        "college studies",
+        "college study tips",
+        "how can I manage college",
+        "college life",
+        "engineering college",
+        "I study engineering",
+        "I am an engineering student",
+        "help me with my engineering studies",
+        "college exams",
+        "engineering exams",
+        "college projects",
+        "help with my college project",
+        "how to manage college work",
+        "college assignments",
+        "college preparation",
+        "university studies",
+        "student help",
+        "advice for college students"
+      ],
+      "responses": [
+        "College becomes easier when you organize your time, attend classes regularly, practice important concepts, and work consistently on assignments.",
+        "For college projects, start by understanding the problem, divide the work into smaller tasks, and test each part as you build it.",
+        "A simple study schedule can help you balance classes, assignments, projects, and exam preparation."
+      ]
+    },
+
+    {
+      "tag": "motivation",
+      "patterns": [
+        "motivate me",
+        "I need motivation",
+        "I need motivation to study",
+        "give me motivation",
+        "motivate me to study",
+        "I need some motivation",
+        "I need encouragement",
+        "give me encouragement",
+        "encourage me",
+        "I don't feel like studying",
+        "I don't want to study",
+        "I am losing motivation",
+        "I have no motivation",
+        "I feel lazy to study",
+        "help me stay motivated",
+        "how can I stay motivated",
+        "give me a motivational message",
+        "I need motivation for my studies",
+        "motivate me for my exam",
+        "I am not interested in studying",
+        "I feel like giving up on studying",
+        "I need a motivational quote",
+        "say something motivating",
+        "give me some encouragement to study",
+        "help me get motivated",
+        "I need motivation for college",
+        "motivate me for college",
+        "I am feeling unmotivated",
+        "how do I stay focused on my studies"
+      ],
+      "responses": [
+        "You don't need to be perfect. Start with one small topic and keep going.",
+        "Every skill becomes easier with practice. Keep going and give yourself time to learn.",
+        "Your progress may feel slow, but every study session adds to your knowledge. Keep going!",
+        "Focus on one topic at a time. Small progress every day can make a big difference.",
+        "You do not have to finish everything at once. Start with one small task and build from there.",
+        "Keep learning, keep practicing, and give yourself credit for the progress you make."
+      ]
+    }
+
+  ]
+}
+
